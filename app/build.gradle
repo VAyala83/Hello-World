@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'hello'
+            keyPassword 'hi'
+            storeFile file('C:/Users/venehisa/AndroidStudioProjects/hello-world/hello-world.iml')
+            storePassword 'world'
+        }
+    }
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
-
     defaultConfig {
         applicationId "com.example.venehisa.helloworld"
         minSdkVersion 15
